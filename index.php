@@ -1,5 +1,5 @@
 <?php
 
-include 'form.html';
+include 'form.php';
 
 ?>

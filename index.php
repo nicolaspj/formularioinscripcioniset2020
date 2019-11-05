@@ -52,18 +52,61 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
+  <style>
+    h1, h2{
+      text-align: center;
+    }
+    label{
+      font-weight: bold;
+    }
+  </style>
+  <h1>INSTITUTO SUPERIOR DE ESTUDIOS TECNICOS</h1>
+  <h2>FICHA DE INSCRIPCION</h2>
+  <form>
+
+      
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul>
+      <div class="col">
+        <div class="container-fluid">
+          <label for="carrera">Seleccionar carrera: </label>
+          <select class="form-control">
+            <option>Manipulacion de alimentos</option>
+            <option>Instrumetacion quirurgica</option>
+            <option>Tecnico en programación</option>
+          </select>
+          <br>
+          <label for="nombre">Nombre/s: </label>
+          <input type="text" name="nombre" id="nombre" required>
+          <label for="apellido">Apellido/s: </label>
+          <input type="text" name="apellido" id="apellido" required><br>
+          <label for="dni">DNI: </label>
+          <input type="number" name="dni" id="dni" required><br><br>
+          <label for="edad">Edad:  </label>
+          <input type="number" name="edad" id="edad">años<br><br>
+          <label for="nacionalidad">Nacionalidad:  </label>
+          <input type="text" name="nacionalidad" id="nacionalidad"><br><br>
+          <label for="tituloSecundario">Titulo secundario:  </label>
+          <input type="text" name="tituloSecundario" id="tituloSecundario"><br><br>
+          <label for="nroDeRegistro">Nro. de registro: </label>
+          <input type="number" name="nroDeRegistro" id="nroDeRegistro"><br><br>
+          <label for="expedidoPor">Expedido por:  </label><br>
+          <p><small>Institucion que expide el titulo secundario (Ejemplo: Escuela Tecnica n°5)</small></p>
+          <input type="text" name="expedidoPor" id="expedidoPor"><br><br>
+          <label for="direccion">Direccion: </label>
+          <input type="text" name="direccion" id="direccion" required><br><br>
+          <label for="telefonoFijo">Telefono fijo: </label>
+          <input type="number" name="telefonoFijo" id="telefonoFijo">
+          <label for="celular">Celular: </label>
+          <input type="number" name="celular" id="celular" required><br><br>
+          <label for="correoElectronico">Correo electronico:   </label>
+          <input type="email" name="correoElectronico" id="correoElectronico"  required><br><br>
+          <label for="firma">Firma: </label><br><br><br><br>
+          <center><input type="submit" name="Enviar"></center>
+        </div>
       </div>
     </div>
-  </div>
+</form>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>

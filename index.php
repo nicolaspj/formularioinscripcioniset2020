@@ -14,7 +14,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>ISET 2020</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" >Inscripcion ISET 2020</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,10 +41,10 @@
             <a class="nav-link" href="#"><?php echo $result; ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="https://github.com/nicolaspj/formularioinscripcioniset2020/blob/master/formulario-de-inscripcion.jpeg">Descarga</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="https://es-la.facebook.com/isetmdq/">Contacto</a>
           </li>
         </ul>
       </div>
@@ -101,7 +101,7 @@
           <label for="correoElectronico">Correo electronico:   </label>
           <input type="email" name="correoElectronico" id="correoElectronico"  required><br><br>
           <label for="firma">Firma: </label><br><br><br><br>
-          <center><input type="submit" name="Enviar"></center>
+          <center><input type="submit" name="Enviar" ></center>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+   
 </body>
 
 </html>

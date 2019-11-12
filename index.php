@@ -70,9 +70,12 @@
         <div class="container-fluid">
           <label for="carrera">Seleccionar carrera: </label>
           <select class="form-control">
-            <option>Manipulacion de alimentos</option>
-            <option>Instrumetacion quirurgica</option>
+            <option>Tecnicatura en Analisis en calidad alimentos</option>
+            <option>Instrumentacion quirurgica</option>
             <option>Tecnico en programación</option>
+            <option>Tecnico en Analisis de sistemas</option>
+            <option>Enfermeria</option>
+            <option>Laboratorio y Analisis clinico</option>
           </select>
           <br>
           <label for="nombre">Nombre/s: </label>

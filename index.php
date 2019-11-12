@@ -62,14 +62,14 @@
   </style>
   <h1>INSTITUTO SUPERIOR DE ESTUDIOS TECNICOS</h1>
   <h2>FICHA DE INSCRIPCION</h2>
-  <form>
+  <form action="results.php" method="post">
 
       
     <div class="row">
       <div class="col">
         <div class="container-fluid">
           <label for="carrera">Seleccionar carrera: </label>
-          <select class="form-control">
+          <select class="form-control" name="carrera">
             <option>Tecnicatura en Analisis en calidad alimentos</option>
             <option>Instrumentacion quirurgica</option>
             <option>Tecnico en programación</option>

@@ -1,6 +1,7 @@
 <?php
-    $db_connection = pg_connect("host=ec2-174-129-253-47.compute-1.amazonaws.com dbname=dd9lraajhtiljc user=xeuhldijwddzdw password=3309ad02e81eebea23fdb7fbd8ce55cd78a9f6db4d6ea705678ba9c070192dcc");
-    $result = pg_query($db_connection, "SELECT 'lastname'");
+    require('pdf/fpdf.php');
+    //$db_connection = pg_connect("host=ec2-174-129-253-47.compute-1.amazonaws.com dbname=dd9lraajhtiljc user=xeuhldijwddzdw password=3309ad02e81eebea23fdb7fbd8ce55cd78a9f6db4d6ea705678ba9c070192dcc");
+    //$result = pg_query($db_connection, "SELECT 'lastname'");
     
 ?>
 
@@ -17,7 +18,7 @@
   <title>ISET 2020</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -38,7 +39,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><?php echo $result; ?></a>
+            <a class="nav-link" href="#"><?php// echo $result; ?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/nicolaspj/formularioinscripcioniset2020/blob/master/formulario-de-inscripcion.jpeg">Descarga</a>
@@ -62,17 +63,20 @@
   </style>
   <h1>INSTITUTO SUPERIOR DE ESTUDIOS TECNICOS</h1>
   <h2>FICHA DE INSCRIPCION</h2>
-  <form>
+  <form action="results.php" method="post">
 
       
     <div class="row">
       <div class="col">
         <div class="container-fluid">
           <label for="carrera">Seleccionar carrera: </label>
-          <select class="form-control">
-            <option>Manipulacion de alimentos</option>
-            <option>Instrumetacion quirurgica</option>
+          <select class="form-control" name="carrera">
+            <option>Tecnicatura en Analisis en calidad alimentos</option>
+            <option>Instrumentacion quirurgica</option>
             <option>Tecnico en programación</option>
+            <option>Tecnico en Analisis de sistemas</option>
+            <option>Enfermeria</option>
+            <option>Laboratorio y Analisis clinico</option>
           </select>
           <br>
           <label for="nombre">Nombre/s: </label>

@@ -1,6 +1,17 @@
 <?php
     require('pdf/fpdf.php');
 
+   /**
+    * 
+    */
+   class PDF extends FPDF
+   {
+       
+       function header()
+       {
+           $this->Image('LogoIset.jpg',10,8,33);
+       }
+   }
     $carrera = $_POST["carrera"];
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
@@ -34,6 +45,19 @@
     $pdf->Cell(80,10,$nacionalidad,1,1,'L');
     $pdf->Cell(80,10,'Titulo Secundario: ',0,0,'L');
     $pdf->Cell(80,10,$tituloSecundario,1,1,'L');
+    $pdf->Cell(80,10,'Nro de Registro: ',0,0,'L');
+    $pdf->Cell(80,10,$nroDeRegistro,1,1,'L');
+    $pdf->Cell(80,10,'Expedido Por: ',0,0,'L');
+    $pdf->Cell(80,10,$expedidoPor,1,1,'L');
+    $pdf->Cell(80,10,'Dirección: ',0,0,'L');
+    $pdf->Cell(80,10,$direccion,1,1,'L');
+    $pdf->Cell(80,10,'Telefono Fijo: ',0,0,'L');
+    $pdf->Cell(80,10,$telefonoFijo,1,1,'L');
+    $pdf->Cell(80,10,'Celular: ',0,0,'L');
+    $pdf->Cell(80,10,$celular,1,1,'L');
+    $pdf->Cell(80,10,'Correo Electronico: ',0,0,'L');
+    $pdf->Cell(80,10,$correoElectronico,1,1,'L');
+    $pdf->Cell(80,10,'Firma',1,1,'L');
     $pdf->Output();
 ?>
 

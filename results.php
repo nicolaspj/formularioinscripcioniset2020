@@ -1,21 +1,11 @@
 <?php
     require('pdf/fpdf.php');
     
-    require('makefont/makefont.php');
+    require('font/makefont/makefont.php');
 
-     MakeFont('Fonts/helvetica.ttf','ISO-8859-2');  
-      /**
-    * 
-    */
+    $pdf->Image('LogoIset.png',10,10,-300);
+     
 
-   class PDF extends FPDF
-   {
-       
-       function header()
-       {
-           $this->Image('LogoIset.jpg',10,8,33);
-       }
-   }
     $carrera = $_POST["carrera"];
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
@@ -33,7 +23,7 @@
     
     $pdf = new FPDF();
     $pdf->AddPage();
-    $pdf->SetFont('helvetica','B',12);
+    $pdf->SetFont('arial','B',12);
     $pdf->Cell(50,10,'Carrera: ',0,0,'L');
     $pdf->Cell(70,10,$carrera,0,1,'C');
     $pdf->Ln();
@@ -68,11 +58,3 @@
 ?>
 
 
-<html>
-<body>
-
-Bienvenido <?php echo $_POST["nombre"]; ?> al ISET<br>
-Tu apellido es: <?php echo $_POST["apellido"]; ?> <br>
-Te anotaste en la carrera: <?php echo $_POST["carrera"]; ?> <br>
-</body>
-</html>

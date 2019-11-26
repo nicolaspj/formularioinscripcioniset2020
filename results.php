@@ -1,9 +1,9 @@
 <?php
     require('pdf/fpdf.php');
     
-    require('makefont/makefont.php');
+    require('pdf/makefont/makefont.php');
 
-     MakeFont('Fonts/helvetica.ttf','ISO-8859-2');  
+     MakeFont('pdf/fonts/helvetica.ttf','ISO-8859-2');  
       /**
     * 
     */

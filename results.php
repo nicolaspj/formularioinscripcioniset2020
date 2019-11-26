@@ -4,6 +4,7 @@
    /**
     * 
     */
+
    class PDF extends FPDF
    {
        
@@ -29,7 +30,7 @@
     
     $pdf = new FPDF();
     $pdf->AddPage();
-    $pdf->SetFont('Arial','B',16);
+    $pdf->SetFont('Arial','B',12);
     $pdf->Cell(50,10,'Carrera: ',0,0,'L');
     $pdf->Cell(70,10,$carrera,0,1,'C');
     $pdf->Ln();
@@ -56,8 +57,8 @@
     $pdf->Cell(80,10,'Celular: ',0,0,'L');
     $pdf->Cell(80,10,$celular,1,1,'L');
     $pdf->Cell(80,10,'Correo Electronico: ',0,0,'L');
-    $pdf->Cell(80,10,$correoElectronico,1,1,'L');
-    $pdf->Cell(80,10,'Firma',1,1,'L');
+    $pdf->Cell(80,20,$correoElectronico,1,1,'L');
+    $pdf->Cell(80,50,'Firma',1,1,'R');
     $pdf->Output();
 ?>
 

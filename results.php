@@ -13,7 +13,7 @@
        
        function header()
        {
-           $this->Image('LogoIset.jpg',10,8,33);
+           $this->Image('LogoIset.png',10,8,33);
        }
    }
     $carrera = $_POST["carrera"];
@@ -68,11 +68,3 @@
 ?>
 
 
-<html>
-<body>
-
-Bienvenido <?php echo $_POST["nombre"]; ?> al ISET<br>
-Tu apellido es: <?php echo $_POST["apellido"]; ?> <br>
-Te anotaste en la carrera: <?php echo $_POST["carrera"]; ?> <br>
-</body>
-</html>

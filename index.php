@@ -73,10 +73,10 @@
           <select class="form-control" name="carrera">
             <option>Tecnicatura en Analisis en calidad alimentos</option>
             <option>Instrumentacion quirurgica</option>
-            <option>Tecnico en programación</option>
-            <option>Tecnico en Analisis de sistemas</option>
+            <option>Tecnico en programación(CETEC)</option>
+            <option>Tecnico en Analisis de sistemas(CETEC)</option>
             <option>Enfermeria</option>
-            <option>Laboratorio y Analisis clinico</option>
+            
           </select>
           <br>
           <label for="nombre">Nombre/s: </label>
@@ -91,7 +91,7 @@
           <input type="text" name="nacionalidad" id="nacionalidad"><br><br>
           <label for="tituloSecundario">Titulo secundario:  </label>
           <input type="text" name="tituloSecundario" id="tituloSecundario"><br><br>
-          <label for="nroDeRegistro">Nro. de registro: </label>
+          <label for="nroDeRegistro">Nro. de registro de Titulo Secundario: </label>
           <input type="number" name="nroDeRegistro" id="nroDeRegistro"><br><br>
           <label for="expedidoPor">Expedido por:  </label><br>
           <p><small>Institucion que expide el titulo secundario (Ejemplo: Escuela Tecnica n°5)</small></p>

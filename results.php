@@ -4,6 +4,8 @@
     require('pdf/makefont/makefont.php');
 
      MakeFont('pdf/fonts/helvetica.ttf','ISO-8859-2');  
+     
+
       /**
     * 
     */
@@ -33,7 +35,7 @@
     
     $pdf = new FPDF();
     $pdf->AddPage();
-    $pdf->SetFont('helvetica','B',12);
+    $pdf->SetFont('arial','B',12);
     $pdf->Cell(50,10,'Carrera: ',0,0,'L');
     $pdf->Cell(70,10,$carrera,0,1,'C');
     $pdf->Ln();

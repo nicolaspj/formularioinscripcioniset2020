@@ -4,9 +4,7 @@
     require('pdf/makefont/makefont.php');
 
      MakeFont('pdf/fonts/helvetica.ttf','ISO-8859-2');  
-      /**
-    * 
-    */
+    
 
    class PDF extends FPDF
    {

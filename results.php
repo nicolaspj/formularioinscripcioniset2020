@@ -18,7 +18,7 @@
     $correoElectronico = $_POST["correoElectronico"];
     $diaTurno = '20201009';
     $horaTurno = '09:30';
-    $result = pg_query($db_connection, "Insert into Registros (nombre,apellido,email,dni,diaturno,horaturno,carrera)values('"+$nombre+"','"+$apellido+"','"+$email+"',"+$dni+",'"+$diaTurno+"','"+$horaTurno+"','"+$carrera+"'");
+    $result = pg_query($db_connection, "Insert into Registros (nombre,apellido,email,dni,diaturno,horaturno,carrera)values('dario','swidzinski','dsw@hotmail.com',2,'20191220','10:15','progrmacion')"; //('"+$nombre+"','"+$apellido+"','"+$email+"',"+$dni+",'"+$diaTurno+"','"+$horaTurno+"','"+$carrera+"'");
     echo $result;
 
 ?>

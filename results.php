@@ -1,22 +1,13 @@
 <?php
     require('pdf/fpdf.php');
+    require('db.php');
     
-    require('pdf/makefont/makefont.php');
 
-     MakeFont('pdf/fonts/helvetica.ttf','ISO-8859-2');  
-     
-
-      /**
-    * 
-    */
 
    class PDF extends FPDF
    {
        
-       function header()
-       {
-           $this->Image('LogoIset.png',10,8,33);
-       }
+
    }
     $carrera = $_POST["carrera"];
     $nombre = $_POST["nombre"];
@@ -31,7 +22,9 @@
     $telefonoFijo = $_POST["telefonoFijo"];
     $celular = $_POST["celular"];
     $correoElectronico = $_POST["correoElectronico"];
-    //$firma = $_POST["firma"];
+    $diaTurno = '20201009';
+    $horaTurno = '09:30';
+    $result = pg_query($db_connection, "Insert into Registros (nombre,apellido,email,dni,diaturno,horaturno,carrera)values('"+$nombre+"','"+$apellido+"','"+$email+"',"+$dni+",'"+$diaTurno+"','"+$horaTurno+"','"+$carrera+"'");
     
     $pdf = new FPDF();
     $pdf->AddPage();
@@ -64,7 +57,7 @@
     $pdf->Cell(80,10,'Correo Electronico: ',0,0,'L');
     $pdf->Cell(80,20,$correoElectronico,1,1,'L');
     $pdf->Cell(80,10,'Firma',0,0,'L');
-    $pdf->Cell(80,20,$firma,1,1,'L');
+    $pdf->Cell(80,20,'',1,1,'L');
 
     $pdf->Output();
 ?>

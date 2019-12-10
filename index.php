@@ -108,11 +108,7 @@
         </div>
       </div>
     </div>
-</form>
-  <form action="index.php" method="post">
-  <input type="text" name="queries" id="queries">
-  <input type="submit" name="Enviar" >
-  </form> 
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>

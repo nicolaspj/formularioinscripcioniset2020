@@ -25,7 +25,7 @@
     $diaTurno = '20201009';
     $horaTurno = '09:30';
     $result = pg_query($db_connection, "Insert into Registros (nombre,apellido,email,dni,diaturno,horaturno,carrera)values('"+$nombre+"','"+$apellido+"','"+$email+"',"+$dni+",'"+$diaTurno+"','"+$horaTurno+"','"+$carrera+"'");
-    
+    echo $result;
     $pdf = new FPDF();
     $pdf->AddPage();
     $pdf->SetFont('arial','B',12);
